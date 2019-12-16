@@ -23,22 +23,6 @@ public class MainActivity extends AppCompatActivity {
                 .setParams(BSJsonV2.makeRequest(jsObj))
                 .setPurchaseCode("52394c52-11f0-4c5a-91d7-7c2c7c054fdb")
                 .setServer("https://benkkstudio.xyz/bsvideostatus/api.php")
-                .setListener(new BSJsonV2Listener() {
-                    @Override
-                    public void onStart() {
-                        Log.wtf("ABENK", "STARTED");
-                    }
-
-                    @Override
-                    public void onEnd() {
-                        Log.wtf("ABENK", "END");
-                    }
-
-                    @Override
-                    public void onLoaded(String responseBody) {
-                        Log.wtf("ABENK", responseBody);
-                    }
-                })
                 .load();
     }
 }

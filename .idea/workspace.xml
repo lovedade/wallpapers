@@ -10,7 +10,12 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6f4b6d9-5f30-4d5c-a8c5-e58aeb1c132e" name="Default Changelist" comment="" />
+    <list default="true" id="a6f4b6d9-5f30-4d5c-a8c5-e58aeb1c132e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/benkkstudio/bsjsonsample/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/benkkstudio/bsjsonsample/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bsjson/src/main/java/com/benkkstudio/bsjson/BSJsonV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/bsjson/src/main/java/com/benkkstudio/bsjson/BSJsonV2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bsjson/src/main/java/com/benkkstudio/bsjson/Interface/BSJsonV2Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/bsjson/src/main/java/com/benkkstudio/bsjson/Interface/BSJsonV2Listener.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
-              <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+              <caret line="25" selection-start-line="25" selection-end-line="25" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -73,14 +78,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bsjson/src/main/java/com/benkkstudio/bsjson/BSJsonV2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+            <state relative-caret-position="216">
+              <caret line="106" column="41" selection-start-line="106" selection-start-column="33" selection-end-line="106" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1347#1348#0" expanded="true" />
                 <element signature="e#1380#1381#0" expanded="true" />
                 <element signature="e#2302#2303#0" expanded="true" />
                 <element signature="e#2346#2347#0" expanded="true" />
+                <element signature="e#2865#2866#0" expanded="true" />
+                <element signature="e#2909#2910#0" expanded="true" />
                 <element signature="e#4673#4674#0" expanded="true" />
                 <element signature="e#4721#4722#0" expanded="true" />
               </folding>
@@ -97,16 +104,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/benkkstudio/bsjsonsample/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="e#1052#1053#0" expanded="true" />
-                <element signature="e#1108#1109#0" expanded="true" />
-                <element signature="e#1200#1201#0" expanded="true" />
-                <element signature="e#1275#1276#0" expanded="true" />
-                <element signature="e#1366#1367#0" expanded="true" />
-                <element signature="e#1437#1438#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="342">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
@@ -115,7 +114,7 @@
         <entry file="file://$PROJECT_DIR$/bsjson/src/main/java/com/benkkstudio/bsjson/Interface/BSJsonV2Listener.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="17" />
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -142,8 +141,8 @@
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/bsjson/src/main/java/com/benkkstudio/bsjson/API.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/bsjson/src/main/java/com/benkkstudio/bsjson/Interface/BSJsonV2Listener.java" />
         <option value="$PROJECT_DIR$/bsjson/src/main/java/com/benkkstudio/bsjson/BSJsonV2.java" />
+        <option value="$PROJECT_DIR$/bsjson/src/main/java/com/benkkstudio/bsjson/Interface/BSJsonV2Listener.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/benkkstudio/bsjsonsample/MainActivity.java" />
       </list>
     </option>
@@ -328,7 +327,7 @@
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Capture Tool" order="8" />
       <window_info anchor="bottom" id="Run" order="0" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="1" visible="true" weight="0.32998884" />
+      <window_info anchor="bottom" id="Logcat" order="1" weight="0.32998884" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" />
       <window_info anchor="bottom" id="Terminal" order="4" />
@@ -400,45 +399,39 @@
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
-          <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bsjson/src/main/java/com/benkkstudio/bsjson/Interface/BSJsonV2Listener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="17" />
+          <caret line="25" selection-start-line="25" selection-end-line="25" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bsjson/src/main/java/com/benkkstudio/bsjson/BSJsonV2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+        <state relative-caret-position="216">
+          <caret line="106" column="41" selection-start-line="106" selection-start-column="33" selection-end-line="106" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1347#1348#0" expanded="true" />
             <element signature="e#1380#1381#0" expanded="true" />
             <element signature="e#2302#2303#0" expanded="true" />
             <element signature="e#2346#2347#0" expanded="true" />
+            <element signature="e#2865#2866#0" expanded="true" />
+            <element signature="e#2909#2910#0" expanded="true" />
             <element signature="e#4673#4674#0" expanded="true" />
             <element signature="e#4721#4722#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/benkkstudio/bsjsonsample/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/bsjson/src/main/java/com/benkkstudio/bsjson/Interface/BSJsonV2Listener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#1052#1053#0" expanded="true" />
-            <element signature="e#1108#1109#0" expanded="true" />
-            <element signature="e#1200#1201#0" expanded="true" />
-            <element signature="e#1275#1276#0" expanded="true" />
-            <element signature="e#1366#1367#0" expanded="true" />
-            <element signature="e#1437#1438#0" expanded="true" />
-          </folding>
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/benkkstudio/bsjsonsample/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>

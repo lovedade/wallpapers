@@ -84,29 +84,31 @@ public class BSJsonV2 {
     }
 
     @SuppressLint("StaticFieldLeak")
-    public class Load extends AsyncTask<String, String, String> {
+    public class Load extends AsyncTask<JSONObject, JSONObject, JSONObject> {
         @Override
         protected void onPreExecute() {
-            bsJsonV2Listener.onStart();
             super.onPreExecute();
         }
 
         @Override
-        protected String doInBackground(String... strings) {
+        protected JSONObject doInBackground(JSONObject... strings) {
             try {
                 String responseBody = API.okhttpPost(server, requestBody);
-                bsJsonV2Listener.onLoaded(responseBody);
+                return new JSONObject(responseBody);
             } catch (Exception e) {
-                Log.wtf("ABENK", e.getMessage());
                 e.printStackTrace();
+                return null;
             }
-            return null;
         }
 
         @Override
-        protected void onPostExecute(String s) {
-            bsJsonV2Listener.onEnd();
-            super.onPostExecute(s);
+        protected void onPostExecute(JSONObject jsonObject) {
+            if(jsonObject != null){
+                bsJsonV2Listener.onLoaded(jsonObject);
+            } else {
+                Toast.makeText(activity, "Server not response, please try again later !", Toast.LENGTH_LONG).show();
+            }
+            super.onPostExecute(jsonObject);
         }
     }
 
