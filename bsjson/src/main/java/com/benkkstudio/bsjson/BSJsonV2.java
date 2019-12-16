@@ -96,6 +96,7 @@ public class BSJsonV2 {
                 String responseBody = API.okhttpPost(server, makeRequest(jsonObject));
                 return new JSONObject(responseBody);
             } catch (Exception e) {
+                bsJsonV2Listener.onError(e.getMessage());
                 e.printStackTrace();
                 return null;
             }

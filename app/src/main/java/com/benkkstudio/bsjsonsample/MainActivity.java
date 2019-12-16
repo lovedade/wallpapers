@@ -23,15 +23,9 @@ public class MainActivity extends AppCompatActivity {
         JsonObject jsObj = (JsonObject) new Gson().toJsonTree(new API());
         jsObj.addProperty("method_name", "settings");
         new BSJsonV2.Builder(this)
-                .setParams(BSJsonV2.makeRequest(jsObj))
+                .setParams(jsObj)
                 .setPurchaseCode("52394c52-11f0-4c5a-91d7-7c2c7c054fdb")
                 .setServer("https://benkkstudio.xyz/bsvideostatus/api.php")
-                .setListener(new BSJsonV2Listener() {
-                    @Override
-                    public void onLoaded(JSONObject jsonObject) {
-                        Toast.makeText(MainActivity.this, "asdasd", Toast.LENGTH_SHORT).show();
-                    }
-                })
                 .load();
     }
 }
