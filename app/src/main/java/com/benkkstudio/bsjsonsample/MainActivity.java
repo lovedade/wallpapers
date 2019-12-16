@@ -4,12 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.benkkstudio.bsjson.API;
 import com.benkkstudio.bsjson.BSJsonV2;
 import com.benkkstudio.bsjson.Interface.BSJsonV2Listener;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
+
+import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,6 +26,12 @@ public class MainActivity extends AppCompatActivity {
                 .setParams(BSJsonV2.makeRequest(jsObj))
                 .setPurchaseCode("52394c52-11f0-4c5a-91d7-7c2c7c054fdb")
                 .setServer("https://benkkstudio.xyz/bsvideostatus/api.php")
+                .setListener(new BSJsonV2Listener() {
+                    @Override
+                    public void onLoaded(JSONObject jsonObject) {
+                        Toast.makeText(MainActivity.this, "asdasd", Toast.LENGTH_SHORT).show();
+                    }
+                })
                 .load();
     }
 }

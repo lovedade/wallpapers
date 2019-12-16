@@ -23,17 +23,17 @@ public class BSJsonV2 {
     private String server;
     private BSJsonV2Listener bsJsonV2Listener;
     private String purchaseCode;
-    private RequestBody requestBody;
+    private JsonObject jsonObject;
 
     private BSJsonV2(Activity activity,
-                     String server, RequestBody requestBody,
+                     String server, JsonObject jsonObject,
                      BSJsonV2Listener bsJsonV2Listener,
                      String purchaseCode) {
         this.activity = activity;
         this.server = server;
         this.bsJsonV2Listener = bsJsonV2Listener;
         this.purchaseCode = purchaseCode;
-        this.requestBody = requestBody;
+        this.jsonObject = jsonObject;
         verifyNow();
     }
 
@@ -93,7 +93,7 @@ public class BSJsonV2 {
         @Override
         protected JSONObject doInBackground(JSONObject... strings) {
             try {
-                String responseBody = API.okhttpPost(server, requestBody);
+                String responseBody = API.okhttpPost(server, makeRequest(jsonObject));
                 return new JSONObject(responseBody);
             } catch (Exception e) {
                 e.printStackTrace();
@@ -112,7 +112,7 @@ public class BSJsonV2 {
         }
     }
 
-    public static RequestBody makeRequest(JsonObject jsObj) {
+    public RequestBody makeRequest(JsonObject jsObj) {
         return new MultipartBody.Builder()
                 .setType(MultipartBody.FORM)
                 .addFormDataPart("data", API.toBase64(jsObj.toString()))
@@ -123,7 +123,7 @@ public class BSJsonV2 {
         private Activity activity;
         private String server;
         private BSJsonV2Listener bsJsonV2Listener;
-        private RequestBody requestBody;
+        private JsonObject jsonObject;
         private String purchaseCode;
 
         public Builder(Activity activity) {
@@ -136,8 +136,8 @@ public class BSJsonV2 {
         }
 
 
-        public BSJsonV2.Builder setParams(RequestBody requestBody) {
-            this.requestBody = requestBody;
+        public BSJsonV2.Builder setParams(JsonObject jsonObject) {
+            this.jsonObject = jsonObject;
             return this;
         }
 
@@ -152,7 +152,7 @@ public class BSJsonV2 {
         }
 
         public BSJsonV2 load() {
-            return new BSJsonV2(activity, server, requestBody, bsJsonV2Listener, purchaseCode);
+            return new BSJsonV2(activity, server, jsonObject, bsJsonV2Listener, purchaseCode);
         }
     }
 }
