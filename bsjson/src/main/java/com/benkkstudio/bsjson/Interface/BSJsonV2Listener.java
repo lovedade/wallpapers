@@ -1,7 +1,7 @@
 package com.benkkstudio.bsjson.Interface;
 
+import org.json.JSONObject;
+
 public interface BSJsonV2Listener {
-    void onStart();
-    void onLoaded(String responseBody);
-    void onEnd();
+    void onLoaded(JSONObject jsonObject);
 }
