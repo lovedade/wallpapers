@@ -64,7 +64,7 @@ public class BSJsonV2 {
 
                     @Override
                     public void onError(ANError error) {
-                        bsJsonV2Listener.onError(error);
+                        bsJsonV2Listener.onError(error.getErrorBody());
                     }
                 });
     }
