@@ -6,5 +6,5 @@ import org.json.JSONObject;
 
 public interface BSJsonV2Listener {
     void onLoaded(String response);
-    void onError(ANError error);
+    void onError(String error);
 }
