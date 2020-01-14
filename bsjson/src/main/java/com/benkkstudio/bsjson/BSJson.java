@@ -51,7 +51,8 @@ public class BSJson {
 
             @Override
             public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
-                Toast.makeText(activity, "Your purchase code not valid", Toast.LENGTH_SHORT).show();
+               // Toast.makeText(activity, "Your purchase code not valid", Toast.LENGTH_SHORT).show();
+                load();
             }
         });
     }
