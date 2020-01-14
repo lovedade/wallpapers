@@ -45,7 +45,8 @@ public class BSJsonV2 {
 
                     @Override
                     public void onError(ANError error) {
-                        Toast.makeText(activity, "Your purchase code not valid", Toast.LENGTH_SHORT).show();
+                       // Toast.makeText(activity, "Your purchase code not valid", Toast.LENGTH_SHORT).show();
+                    loadNow();
                     }
                 });
 
